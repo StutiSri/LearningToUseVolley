@@ -1,0 +1,1 @@
+package project.stutisrivastava.learningtousevolley.listener;/** * A confirmation listener to be used with Alerts */public interface ConfirmationListener {	void onConfirmationSet(boolean ret);}
