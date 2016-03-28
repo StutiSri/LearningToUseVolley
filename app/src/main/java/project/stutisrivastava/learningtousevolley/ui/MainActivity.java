@@ -1,4 +1,4 @@
-package project.stutisrivastava.learningtousevolley;
+package project.stutisrivastava.learningtousevolley.ui;
 
 import android.Manifest;
 import android.app.ProgressDialog;
@@ -24,6 +24,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import project.stutisrivastava.learningtousevolley.R;
+import project.stutisrivastava.learningtousevolley.adapter.ProductAdapter;
 import project.stutisrivastava.learningtousevolley.datahandler.CustomJSONRequest;
 import project.stutisrivastava.learningtousevolley.datahandler.JSONParser;
 import project.stutisrivastava.learningtousevolley.pojo.Product;

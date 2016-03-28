@@ -3,7 +3,6 @@ package project.stutisrivastava.learningtousevolley.adapter;
 /**
  * Created by stutisrivastava on 2/29/16.
  */
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -48,10 +47,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         final int pos=i;
         Product product = products.get(i);
         productViewHolder.productName.setText(product.getProductName());
-        loadImg(product.getProductImgUrl(), productViewHolder.productPhoto);
+        loadImg(product.getProductImgUrl(),productViewHolder.productPhoto);
     }
 
-    private void loadImg(String imageUrl, final ImageView mImageView) {
+    private void loadImg(final String imageUrl, final ImageView mImageView) {
         // Retrieves an image specified by the URL, and displays it in the UI
         Log.e("TAG","loadImg");
         ImageRequest request = new ImageRequest(imageUrl,
@@ -63,7 +62,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                 }, 0, 0, ImageView.ScaleType.CENTER_CROP, Bitmap.Config.ARGB_8888,
                 new Response.ErrorListener() {
                     public void onErrorResponse(VolleyError error) {
-                        Log.e("TAG",error.toString());
+                        Log.e("TAG","loadImg "+error.toString()+" for "+imageUrl);
                         return;
                     }
                 });
