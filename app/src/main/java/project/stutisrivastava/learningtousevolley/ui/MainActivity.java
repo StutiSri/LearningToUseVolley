@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Handles Volley errors and displays an alert box to the User, if user is trying to load more data
+     * Handles Volley errors and displays an alert box to the Customer, if user is trying to load more data
      * and then error occurs no alert is shown
      */
 
